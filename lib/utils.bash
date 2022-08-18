@@ -37,8 +37,9 @@ download_release() {
   local version filename url
   version="$1"
   filename="$2"
+  kernel=$(uname | tr '[:upper:]' '[:lower:]')
 
-  url="$GH_REPO/releases/download/v${version}/q_${version}_linux_amd64.tar.gz"
+  url="$GH_REPO/releases/download/v${version}/q_${version}_${kernel}_amd64.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
