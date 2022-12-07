@@ -25,7 +25,7 @@ Plugin:
 ```shell
 asdf plugin add qdns
 # or
-asdf plugin add qdns https://github.com/moritz-makandra/asdf-qdns.git
+asdf plugin add qdns https://github.com/moritz-makandra/asdf-plugin-qdns.git
 ```
 
 qdns:
